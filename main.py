@@ -6,7 +6,7 @@ import string
 #------------------------------------
 
 # Password length input by user
-length = int(input('Password length: '))
+length = int(input('Password character length: '))
 
 # Password should have uppercase letters, yes or no
 uppercases = input('Password should have upper cases? y/n: ')
