@@ -1,6 +1,10 @@
 import random
 import string
 
+#------------------------------------
+# USER INPUTS
+#------------------------------------
+
 # Password length input by user
 length = int(input('Password length: '))
 
@@ -17,7 +21,9 @@ special_chars = input('Password should have special characters? y/n: ')
 assert special_chars == 'y' or special_chars == 'n', "Answer should be 'y' or 'n'"
 
 
-
+#------------------------------------
+# CHARACTERS IN PASSWORD GIVEN INPUTS
+#------------------------------------
 # Now the characters that should be on the password are:
 
 lowercase_letters = string.ascii_lowercase # [a,z]
@@ -40,6 +46,9 @@ else:
 all_characters = lowercase_letters + uppercase_letters + numbers + special_characters 
 
 
+#------------------------------------
+# PASSWORD GENERATOR
+#------------------------------------
 # We take a sample from the pool of all of the posibles characters given the password length 
 password = random.sample(all_characters, length)
 password = "".join(password)
