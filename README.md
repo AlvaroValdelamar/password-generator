@@ -1,12 +1,12 @@
 # password-generator
 A Python script to generate passwords given password characterists by the user.
 
-It currently supports
+It currently supports the following user inputs:
 
--password length
+- password length
 
--upper cases
+- upper cases
 
--numeric characters
+- numeric characters
 
--special characters
+- special characters
